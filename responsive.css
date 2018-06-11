@@ -1,0 +1,144 @@
+/*
+
+  基本的には 1040px以上（デスクトップ　２カラム)
+  768~1039px
+  767px以下
+
+  */
+
+
+
+
+/* メインレイアウト */
+.main-contents-area{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.4em;
+  margin: 0 0 2em;
+
+}
+
+.main-contents-area .content-area {
+  width: 690px;
+  /*  background: #ddd; */
+  padding: 1em;
+  margin: 0.4em;
+
+}
+.main-contents-area .sidebar-area {
+  width:350px;
+
+  padding: 1em;
+  margin: 0.4em;
+
+}
+
+
+/*
+.main-contents-area .content-area {
+  flex: 1 0 650px;
+  background: #ddd;
+  padding: 1em;
+  margin: 0.4em;
+}
+.main-contents-area .sidebar-area {
+  flex: 1 0 390px;
+  background: #ddd;
+  padding: 1em;
+  margin: 0.4em;
+}
+*/
+
+
+/*  ここは記事詳細画面  */
+.mainposts-area{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.4em;
+  margin: 0 0 2em;
+}
+
+
+
+
+/*  記事一覧のデザイン  */
+
+.mainposts-area{
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0.4em;
+  margin: 0 0 2em;
+}
+
+
+.mainposts-area .mainposts-loop{
+  width: 300px;
+  background: #fff;
+  padding: 1em;
+  margin: 0.4em;
+  box-shadow: 0 0 8px gray;
+}
+
+
+/*   関連記事エリア */
+.near-post-area{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.4em;
+  margin: 0 0 2em;
+}
+.near-post-area .icat{
+  width: 30%;
+  height: 200px;
+}
+.near-post-area .title{
+  width: 60%;
+}
+
+
+
+.hotpost-area{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+}
+
+.hotpost-area .thumb{
+  width: 90px;
+  height: 90px;
+}
+.hotpost-area .title{
+  width: 100%;
+  height: 90px;
+}
+
+
+/* スマホ  612でレイアウトワンカラムか*/
+
+@media screen and (max-width: 713px) {
+  .mainposts-area .mainposts-loop{
+    width: 250px;
+    background: #fff;
+    padding: 1em;
+    margin: 0.4em;
+    box-shadow: 0 0 8px gray;
+  }
+}
+
+@media screen and (max-width: 612px) {
+  .mainposts-area .mainposts-loop{
+    width: 80%;
+    background: #fff;
+    padding: 1em;
+    margin: 0.4em;
+    box-shadow: 0 0 8px gray;
+  }
+}
